@@ -71,9 +71,9 @@
 
 @media (max-width: 650px) {
   #container {
-    width: 100%;
+    width: auto;
   }
-  p {
+  .headingp {
     font-size: 3.5em;
   }
 }
