@@ -1,29 +1,4 @@
-.fullscreen-video-wrap{   
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%; 
-    min-width: 100%;
-    min-height: 100%;
-    padding: 0 !important;
-    overflow: hidden;
-  }
-  .fullscreen-video-wrap video{
-    width: 100%;
-    min-height: 100%;
-  }
-  .texty{
-    font-size: 65px;
-    font-weight: 300;
-       
-  }
-  .showcase {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../Assets/video_bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0 20px;
-  }
+video{
+  width: 100%;
+  height: auto;
+}

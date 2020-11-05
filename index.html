@@ -243,7 +243,45 @@
 </head>
 
 <body>
+    <div>
+        <video loop muted autoplay id="myvideo"> 
+            <!-- <source src="Assets/mobile.mp4" >  -->   
+        </video>    
+    </div>
 
+    <script type="text/javascript">
+        var video = document.getElementById('myvideo');
+        var source = document.createElement('source');
+
+        video.appendChild(source);
+        video.play();
+
+        function change_video() {
+            var w = parseInt(window.innerWidth);
+
+            if(w <= 500) {
+                video.pause();
+                source.setAttribute('src', 'Assets/mobile.mp4'); 
+                video.load();
+                video.play();
+            }else {
+                video.pause();
+                source.setAttribute('src', 'Assets/laptop.mp4'); 
+                video.load();
+                video.play();
+            }
+
+        }
+
+        $(window).resize(function(e) {
+            change_video();
+        });
+        $(document).ready(function(e) {
+            change_video();
+        });
+    </script>
+
+    <!-- about us -->
 
     <div class="px-2 pt-3 pt-md-5 row section-2" data-emit-events="" id="aboutudyam">
         <div class="col text-center justify-content-center align-items-center d-flex flex-column">
