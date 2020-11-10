@@ -72,6 +72,17 @@
 
             }
         }
+        .editphoto{
+            position: absolute;
+            z-index: 200;
+            margin-top: 134px;
+            margin-left: 37px;
+            font-size: 20px;
+            padding: 2px 3px;
+            color:  #1da1f2;
+            border: 2px solid #1da1f2;
+            border-radius: 17px;
+        }
     </style>
 </head>
 <body>
@@ -105,8 +116,9 @@
 
         <!-- Cover Header Start -->
         <div class="cover--header pt--80 text-center" data-bg-img="dashboard/img/cover.jpg" >
+            <a href="#" class="fa fa-pencil editphoto"></a>
             <div class="container">
-                <div class="cover--avatar online" data-overlay="0.3" data-overlay-color="primary">
+                <div class="cover--avatar" data-overlay="0.3" data-overlay-color="primary">
                     <img src="dashboard/img/profile.jpg" alt="">
                 </div>
 
@@ -391,6 +403,10 @@
                                             <div class="form-group">
                                               <label for="exampleInputPassword1">Password</label>
                                               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputimage">Profile Picture</label>
+                                              <input type="file" class="form-control" id="exampleInputimage" placeholder="Password">
                                             </div>
                                           </form>
                                     </div>
