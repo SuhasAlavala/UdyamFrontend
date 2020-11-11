@@ -53,7 +53,7 @@
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/component.css" />
-		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/mobile.css" />
+		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/mobile2.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
@@ -88,7 +88,17 @@
                 
             }
             @media only screen and (min-width: 600px) {
+                .udyam--logo{
+                /* display: none; */
+                height: 64px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 17px; z-index: 500; left: 32px;
+            }
             .container-mobile {
+                display: none;
+            }
+            .mobilenav {
                 display: none;
             }
             .navynavy{
@@ -100,13 +110,40 @@
             }
         }
             @media only screen and (max-width: 600px) {
-            .windowview {
+            .windowview{
                 display: none;
             }
+            .udyam--logo{
+                /* display: none; */
+                height: 45px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 9px; z-index: 500; left: 15px;
+            }
+            .mobilenav{
+                z-index: 10;
+                width: 100%;
+                height: 60px;
+                background-color: brown;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+			.container-mobile{
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				z-index: 300;
+				top: 0px;
+			}
         }
         .menu__item a:hover{
             text-decoration: none;
         }
+        body{
+            height: 100%;
+        }
+
 
     </style>
 
@@ -154,31 +191,44 @@
         
     </div>
     <!-- MOBILE VIEW ------------------------------------------------------------------>
-    <div class="container-mobile">
+    
+    <div class="container-mobile" style="width: 100%;">
 
-        <input id="toggle" type="checkbox">
-    
+        <div class="device">
+            <div class="containermoba">
+                <button id="burger" class="open-main-nav">
+                    <span class="burger"></span>
+                    <span class="burger-text"></span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
-        <label class="toggle-container" for="toggle">
-         
-          <span class="button button-toggle"></span>
-        </label>
-    
-        <!-- The Nav Menu -->
-        <nav class="nav">
-          <a class="nav-item" href="">Home</a>
-          <a class="nav-item" href="">About Us</a>
-          <a class="nav-item" href="">Events</a>
-          <a class="nav-item" href="">Schedule</a>
-          <a class="nav-item" href="">Contact Us</a>
-          <a class="nav-item" href="">Team</a>
-          <a class="nav-item" href="">LogIn</a>
-        </nav>
-    
-
-        
-      </div>
-    <!-- / MOBILE VIEW ---------------------------------------------------------------->
+                    
+                  </div>
+                  <script src="NAVBAR-21-main/js/mobile.js"></script>
+                  <!-- / MOBILE VIEW ---------------------------------------------------------------->
     <!-- /container -->
     <script src="NAVBAR-21-main/js/classie.js"></script>
     <script src="NAVBAR-21-main/js/clipboard.min.js"></script>
