@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>udyam'20</title>
+    <title>Udyam'21</title>
 
     <!-- backtotop??????????????????????????????????????????? -->
 
@@ -53,7 +53,7 @@
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/component.css" />
-		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/mobile.css" />
+		<link rel="stylesheet" type="text/css" href="NAVBAR-21-main/css/mobile2.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
@@ -65,165 +65,13 @@
         }
 
         body {
-            /* background: url(https://robertsspaceindustries.com/rsi/static/images/gridbg_glow.png),
-        url(https://robertsspaceindustries.com/rsi/static/images/common/bg-stars-2560.jpg)
-        repeat; */
-            background-image: url("Assets/abstract2.jpg");
-            /* background-color: rgb(182, 40, 40); */
+            background-image: url("Assets/background7mobile.png");
             background-size: cover;
-            /* background-repeat: no-repeat; */
             background-attachment: fixed;
             color: rgba(255, 255, 255, 0.9);
             font-family: "Nunito Sans", sans-serif;
-            overflow-x: hidden
+            overflow-x: hidden;w
         }
-
-        /* .row1 {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 90%;
-            margin: auto;
-            margin-top: 50px;
-        }
-
-        .compis-desc {
-            margin-bottom: 15px;
-             height: 250px; 
-        }
-
-        .rowt {
-            margin-bottom: 15px;
-            height: 255px;
-        }
-
-        .compis-logo {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 1;
-            -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
-        }
-
-        .compis-desc:hover {
-            transform: scale(1.03);
-            transition: transform .5s ease;
-        }
-
-        .compis-content {
-            color: white;
-            height: 100%;
-            background-color: rgba(75, 52, 88, 0.3);
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 15px;
-            padding-bottom: 0.5rem;
-            -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
-        }
-
-        .compis-content>p {
-            margin-bottom: 0.2rem;
-        }
-
-        .compis-name {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .compis-pm>span {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .compis-btn {
-            width: 9rem;
-        }
-
-        .tab-pane {
-            font-size: 1.2rem;
-        }
-
-        #prize-money,
-        #num-compi,
-        #num-parti {
-            font-weight: 600;
-        }
-
-        #prize-money:after {
-            content: ' +';
-        }
-
-        #num-parti:after {
-            content: ' +';
-        }
-
-        #num-compi:after {
-            content: ' +';
-        }
-
-        .compis-about {
-            font-size: 14px;
-        }
-
-        #navbar {
-            opacity: 0;
-            overflow: hidden;
-            width: 100%;
-            z-index: 9999;
-        }
-
-        .content {
-            top: 0;
-            padding: 0;
-            position: fixed;
-        }
-
-        .section--menu {
-            background-color: black;
-            margin: 0px;
-            padding: 0px;
-            min-height: 0px;
-            padding-top: 10px;
-        }
-
-        .menu__link {
-            color: white;
-            font-size: 22px;
-            opacity: 1;
-        }
-
-        @media only screen and (min-width: 600px) {
-            .container-mobile2 {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            .container2 {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 900px) {
-            .row1 {
-                display: block;
-            }
-
-            .row {
-                width: 700px;
-                margin-bottom: 100px;
-            }
-
-            .compis-desc {
-                margin-bottom: 50px;
-                width: 700px;
-            }
-
-        } */
         
         .section--menu{
 				background-color: black;
@@ -240,7 +88,17 @@
                 
             }
             @media only screen and (min-width: 600px) {
+                .udyam--logo{
+                /* display: none; */
+                height: 64px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 17px; z-index: 500; left: 32px;
+            }
             .container-mobile {
+                display: none;
+            }
+            .mobilenav {
                 display: none;
             }
             .navynavy{
@@ -252,13 +110,40 @@
             }
         }
             @media only screen and (max-width: 600px) {
-            .windowview {
+            .windowview{
                 display: none;
             }
+            .udyam--logo{
+                /* display: none; */
+                height: 45px;
+            }
+            .logogood{
+                display: inline; position: fixed ; top: 9px; z-index: 500; left: 15px;
+            }
+            .mobilenav{
+                z-index: 10;
+                width: 100%;
+                height: 60px;
+                background-color: brown;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+			.container-mobile{
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				z-index: 300;
+				top: 0px;
+			}
         }
         .menu__item a:hover{
             text-decoration: none;
         }
+        body{
+            height: 100%;
+        }
+
 
     </style>
 
@@ -306,31 +191,44 @@
         
     </div>
     <!-- MOBILE VIEW ------------------------------------------------------------------>
-    <div class="container-mobile">
+    
+    <div class="container-mobile" style="width: 100%;">
 
-        <input id="toggle" type="checkbox">
-    
+        <div class="device">
+            <div class="containermoba">
+                <button id="burger" class="open-main-nav">
+                    <span class="burger"></span>
+                    <span class="burger-text"></span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
-        <label class="toggle-container" for="toggle">
-         
-          <span class="button button-toggle"></span>
-        </label>
-    
-        <!-- The Nav Menu -->
-        <nav class="nav">
-          <a class="nav-item" href="">Home</a>
-          <a class="nav-item" href="">About Us</a>
-          <a class="nav-item" href="">Events</a>
-          <a class="nav-item" href="">Schedule</a>
-          <a class="nav-item" href="">Contact Us</a>
-          <a class="nav-item" href="">Team</a>
-          <a class="nav-item" href="">LogIn</a>
-        </nav>
-    
-
-        
-      </div>
-    <!-- / MOBILE VIEW ---------------------------------------------------------------->
+                    
+                  </div>
+                  <script src="NAVBAR-21-main/js/mobile.js"></script>
+                  <!-- / MOBILE VIEW ---------------------------------------------------------------->
     <!-- /container -->
     <script src="NAVBAR-21-main/js/classie.js"></script>
     <script src="NAVBAR-21-main/js/clipboard.min.js"></script>
@@ -419,7 +317,7 @@
             <div class="heading-containter">
                 <p class="headingp"><a class="headinga">ABOUT US</a></p>
             </div>
-            <div class="row mb-5 pb-5">
+            <div class="row">
                 <div class="col-12 col-md-4 justify-content-center align-items-center d-flex flex-column tv-box faster">
                     
                     <div class="mt-3 mainimg" data-toggle="modal" data-target=".video-modal-lg">
@@ -562,7 +460,7 @@
 
             <div class="col-md-6  compis-desc">
                 <div class="row mar-manage2">
-                    <div class="col-md-5  padright"><img class="compis-logo" src="Assets/ichip.jpg" alt="">
+                    <div class="col-md-5  padright"><img class="compis-logo" src="Assets/comm.jpg" alt="">
                     </div>
                     <div class="col-md-7  padleft">
                         <div class="compis-content">
@@ -668,7 +566,7 @@
 
             <div class="col-md-6  compis-desc">
                 <div class="row mar-manage1">
-                    <div class="col-md-5 padright"><img class="compis-logo" src="Assets/cassandra.jpg" alt="">
+                    <div class="col-md-5 padright"><img class="compis-logo" src="Assets/funkit.jpg" alt="">
                     </div>
                     <div class="col-md-7  padleft">
                         <div class="compis-content">
@@ -929,7 +827,7 @@
     <div class="heading-containter" id="ourschedule">
         <p class="headingp"><a class="headinga">SCHEDULE</a></p>
     </div>
-    <div class="containertp">
+    <div class="containert">
         <div class="rowtp">
             <div class="col-md-12">
                 <div class="main-timeline3">
