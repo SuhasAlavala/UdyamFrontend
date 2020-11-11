@@ -126,7 +126,8 @@ body {
   box-shadow: 0 0 1px 5px #8cc43d;
 }
 .main-timeline3 .timeline:nth-child(2n) .year {
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 10px 10px 0;
   left: auto;
   right: -20px;
