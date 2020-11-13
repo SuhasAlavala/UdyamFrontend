@@ -78,7 +78,8 @@
                 margin: 0px;
 				padding: 0px;
 				min-height: 0px;
-				padding-top: 1rem;
+                padding-top: 1rem;
+                height: 75px;
 
             }
 			.menu__link{
@@ -87,10 +88,21 @@
 				opacity: 1;
                 
             }
-            @media only screen and (min-width: 600px) {
+            .menu__helper{
+                font-size: 22px;
+            }
+            .udyam--logo{
+                height: 42px;
+            }
+            @media only screen and (min-width: 1400px) {
                 .udyam--logo{
                 /* display: none; */
-                height: 64px;
+                height: 58px;
+            }
+            }
+            @media only screen and (min-width: 1200px) {
+            .signinbutton{
+                display: inline; position: fixed ; top: 19px; z-index: 500; right: 50px;
             }
             .logogood{
                 display: inline; position: fixed ; top: 17px; z-index: 500; left: 32px;
@@ -102,14 +114,14 @@
                 display: none;
             }
             .navynavy{
-                height: 98px;
+                height: 75px;
                 background-color: black;
                 position: sticky;
                 top: 0;
                 z-index: 300;
             }
         }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 1200px) {
             .windowview{
                 display: none;
             }
@@ -135,8 +147,15 @@
 				width: 100%;
 				z-index: 300;
 				top: 0px;
-			}
+            }
+            .signinbutton{
+                display: none;
+            }
         }
+        /* @media (min-width: 1200px) and (min-width: 1400){ */
+
+            
+        
         .menu__item a:hover{
             text-decoration: none;
         }
@@ -171,6 +190,9 @@
     <div class="mobilenav"></div>
     <div class="navynavy">
     <!-- navbar------------------------------------------ -->
+    <div class="signinbutton">
+        <a class="btn btn-outline-success" href="">Sign In</a>
+    </div>
     <div class="logogood" >
         <img class="udyam--logo" src="dashboard/img/udyamwhite2.png" alt=""  >
     </div>
@@ -181,11 +203,12 @@
                 <ul class="menu__list" id="toplist">
                     <li class="menu__item menu__item--current"><a href="#" class="menu__link" onclick="smoothScroll(document.getElementById('ourhome'))"><span class="menu__helper">Home</span></a></li>
                     <li class="menu__item"><a href="#aboutudyam" class="menu__link"  onclick="smoothScroll(document.getElementById('aboutudyam'))"><span class="menu__helper" >About</span></a></li>
-                    <li class="menu__item"><a href="#ourevents" class="menu__link" onclick="smoothScroll(document.getElementById('ourevents'))"><span class="menu__helper">Events</span></a></li>
+                    <li class="menu__item"><a href="#ourevents" class="menu__link" onclick="smoothScroll(document.getElementById('countit'))"><span class="menu__helper">Events</span></a></li>
                     <li class="menu__item"><a href="#ourschedule" class="menu__link" onclick="smoothScroll(document.getElementById('ourschedule'))"><span class="menu__helper">Schedule</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Speakers</span></a></li>
                     <li class="menu__item"><a href="#ourcontact" class="menu__link" onclick="smoothScroll(document.getElementById('ourcontact'))"><span class="menu__helper">Contact Us</span></a></li>
                     <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Team</span></a></li>
-                    <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">LogIn</span></a></li>
+                    
                 </ul>
             </nav>
         </section>
@@ -203,23 +226,29 @@
                 </button>
                 <nav class="main-nav" id="main-nav">
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
+                        <li class="clickme">
+                            <a href="#" onclick="smoothScroll(document.getElementById('ourhome'))">Home</a>
                         </li>
-                        <li>
-                            <a href="#">About Us</a>
+                        <li class="clickme">
+                            <a href="#aboutudyam" onclick="smoothScroll(document.getElementById('aboutudyam'))">About Us</a>
                         </li>
-                        <li>
-                            <a href="#">Events</a>
+                        <li class="clickme">
+                            <a href="#ourevents" onclick="smoothScroll(document.getElementById('ourevents'))">Events</a>
                         </li>
-                        <li>
-                            <a href="#">Contact Us</a>
+                        <li class="clickme">
+                            <a href="#ourschedule" onclick="smoothScroll(document.getElementById('ourschedule'))">Schedule</a>
                         </li>
-                        <li>
-                            <a href="#">Team</a>
+                        <li class="clickme">
+                            <a href="#" onclick="smoothScroll(document.getElementById('ourhome'))">Speakers</a>
                         </li>
-                        <li>
-                            <a href="#">Log In</a>
+                        <li class="clickme">
+                            <a href="#ourcontact" onclick="smoothScroll(document.getElementById('ourcontact'))">Contact Us</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#" >Team</a>
+                        </li>
+                        <li class="clickme">
+                            <a href="#">Sign In</a>
                         </li>
                     </ul>
                 </nav>
@@ -362,7 +391,7 @@
 
 
     <!--countdown-->
-    <div class="bg-img1 size1 overlay1">
+    <div class="bg-img1 size1 overlay1" id="countit">
         <div class="cd100"></div>
     </div>
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
