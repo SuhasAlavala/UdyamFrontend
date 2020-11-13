@@ -61,7 +61,7 @@
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4, 0 0 2px #03e9f4;
+    text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #fff, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4, 0 0 1.5px #03e9f4;
   }
   to {
     text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
@@ -74,6 +74,6 @@
     width: auto;
   }
   .headingp {
-    font-size: 3.5em;
+    font-size: 2em;
   }
 }
