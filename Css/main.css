@@ -13,18 +13,6 @@
   src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
 }
 
-body {
-  background-image: url("../Assets/abstract2.jpg");
-  /* background-color: rgb(182, 40, 40); */
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  background-attachment: fixed;
-}
-/* .row {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-} */
 .rowtp {
   width: 80%;
   height: 100%;
