@@ -143,10 +143,13 @@
             }
 			.container-mobile{
 				position: fixed;
-				height: 100%;
+				height: 90px;
 				width: 100%;
 				z-index: 300;
 				top: 0px;
+            }
+            .container-mobile-height{
+                height: 100%;
             }
             .signinbutton{
                 display: none;
@@ -220,7 +223,8 @@
 
         <div class="device">
             <div class="containermoba">
-                <button id="burger" class="open-main-nav">
+                <button id="burger" class="open-main-nav" onclick="toggle_navbar()">
+
                     <span class="burger"></span>
                     <span class="burger-text"></span>
                 </button>
@@ -254,8 +258,7 @@
                 </nav>
             </div>
         </div>
-        
-                    
+          
                   </div>
                   <script src="NAVBAR-21-main/js/mobile.js"></script>
                   <!-- / MOBILE VIEW ---------------------------------------------------------------->
@@ -1000,7 +1003,7 @@
 
                 <div class="social-media">
                     <ul class="list-inline">
-                        <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/SuhasAlavala/UdyamFrontend" title=""><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
@@ -1009,6 +1012,13 @@
 
         </footer>
     </div>
+
+    <script> 
+        function toggle_navbar(){
+            var temp = document.querySelector(".container-mobile");
+            temp.classList.toggle("container-mobile-height")
+        }
+    </script>
 
     <script src="Javascript/scrollingjs.js"></script>
 
